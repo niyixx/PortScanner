@@ -26,6 +26,7 @@ def scan(target, ports):
     num_of_opened_ports = len(opened_ports)
     if num_of_opened_ports > 0:
         print(termcolor.colored(f"You have {num_of_opened_ports} number of opened ports on " + str(target), "green"))
+        opened_ports.clear()
     elif num_of_opened_ports == 0:
         print(termcolor.colored("You have no opened ports on " + str(target) + "!!!", "red"))
 
